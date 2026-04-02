@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "psy5000"
+version = "0.1.0"
+description = "V7 Persona Interface skeleton with NCE text pipeline"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "dialogclub"}]
+dependencies = []
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]
